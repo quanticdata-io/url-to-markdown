@@ -1,0 +1,31 @@
+name: Bug report
+description: A page converts badly, or the tool fails.
+labels: [bug]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: URL or input
+      description: The page (or attach the saved HTML file).
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or code
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected and what you got
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versions
+      description: Output of `url-to-markdown --version` and `node --version`, and your OS.
+    validations:
+      required: true

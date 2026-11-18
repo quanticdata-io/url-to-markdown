@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: QuanticData API questions
+    url: https://quanticdata.io/docs/
+    about: Questions about API keys, the backend or your account.
+  - name: Security report
+    url: https://github.com/quanticdata-io/url-to-markdown/blob/main/SECURITY.md
+    about: Please report vulnerabilities privately.
