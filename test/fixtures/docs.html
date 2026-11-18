@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Getting started - Widget SDK docs</title>
+  <meta name="description" content="Install the Widget SDK and make your first request.">
+</head>
+<body>
+  <nav class="sidebar"><a href="/docs/">Docs home</a><a href="/docs/api">API</a></nav>
+  <main>
+    <h1>Getting started</h1>
+    <p>This guide installs the SDK, configures a client and sends a first request. It takes about five minutes and needs Python 3.9 or newer.</p>
+    <h2>Install</h2>
+    <p>Install the package with your package manager of choice:</p>
+    <pre data-lang="bash"><code>pip install widget-sdk</code></pre>
+    <h2>Configure</h2>
+    <p>Create a client with your key. The key is read from the <code>WIDGET_KEY</code> environment variable when you do not pass one.</p>
+    <pre><code class="language-python">from widget import Client
+
+client = Client(timeout=30)
+print(client.ping())</code></pre>
+    <div class="highlight highlight-source-js"><pre>const client = new Client({ timeout: 30 });
+await client.ping();</pre></div>
+    <h3>Options</h3>
+    <table>
+      <thead><tr><th>Option</th><th>Type</th><th>Default</th></tr></thead>
+      <tbody>
+        <tr><td><code>timeout</code></td><td>int</td><td>30</td></tr>
+        <tr><td><code>retries</code></td><td>int</td><td>2</td></tr>
+      </tbody>
+    </table>
+    <h2>Next steps</h2>
+    <p>See the <a href="api#client">API reference</a> and the <a href="#install">install section</a>.</p>
+    <pre><code>Here is a fence inside code: ``` and more</code></pre>
+  </main>
+  <footer>Docs footer</footer>
+</body>
+</html>
